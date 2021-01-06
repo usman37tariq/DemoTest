@@ -29,13 +29,13 @@ public class LoginPageTest extends TestBase{
 		Assert.assertEquals(title, "Daijob.com :: 'Jobs for international business professionals.");
 	}
 	
-	@Test(priority=1)
+	@Test(priority=2)
 	public void crmLogoImageTest(){
 		boolean flag = loginPage.validateCRMImage();
 		Assert.assertTrue(flag);
 	}
 	
-	@Test(priority=1)
+	@Test(priority=3)
 	public void loginTest(){
 		loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
